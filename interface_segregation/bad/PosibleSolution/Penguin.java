@@ -1,5 +1,6 @@
 
 
+package interface_segregation.bad.PosibleSolution;
 /**
  * Created by mrk on 4/7/14.
  */
@@ -15,14 +16,19 @@ public class Penguin implements Bird {
         this.numberOfFeathers -= 1;
     }
 
-    public void fly() {
-        throw new UnsupportedOperationException();
-    }
-
     public void swim() {
         this.currentLocation = "in the water";
     }
 
-     
-    
+    @Override
+    public void comer() {
+        System.out.println("Comen pescado");
+        
+    }
+
+    @Override
+    public void producirSonido() {
+        // reproduce un audio.mp3 del sonido del penguin
+        
+    }
 }
